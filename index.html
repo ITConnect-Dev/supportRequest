@@ -31,6 +31,7 @@
 </head>
 
 <body>
+  <form action="function.php" method="post" data-abide>
   <div class="container" id="top">
       <div class="mainBanner row" lang="en">
         <div class="columns four borderRight">
@@ -60,13 +61,13 @@
           <!-- Authorized by -->
           <div>
             <label  class="title field label" for="authName">Authorized By: </label>
-            <input type="text" class="input" id="authName" name="authName" value="" required="required" placeholder="Full Name">
+            <input type="text" class="input" id="authName" name="authName" required="required" placeholder="Full Name">
           </div>
 
           <!-- Requester Info -->
           <div>
             <label  class="title field label" for="reqName">Requested By: </label>
-            <input type="text" class="input" id="reqName" name="reqName" value="" required="required" placeholder="Full Name">
+            <input type="text" class="input" id="reqName" name="reqName" required="required" placeholder="Full Name">
           </div>
 
           <!-- Request Type -->
@@ -88,16 +89,16 @@
               <h5 class="noMargin">User's Information</h5>
               <div class="left">
                 <label  class="title field label" for="username">User's Name: </label>
-                <input id="username" type="text" class="input" name="username" value="" required="true" placeholder="Full Name">
+                <input id="username" type="text" class="input" name="username" required="true" placeholder="Full Name">
               </div>
               <div class="left">
                 <label  class="title field label" for="similar">Similar User: </label>
-                <input id="similar" type="text" class="input" name="similar" value="" required="true" placeholder="User to clone from">
+                <input id="similar" type="text" class="input" name="similar" required="false" placeholder="User to clone from">
               </div>
               <div class="left">
                 <div class="left">
                   <label  class="title field label" for="position">Position: </label>
-                  <input id="position" class="input" type="text" name="position" value="" required="true" placeholder="Position">
+                  <input id="position" class="input" type="text" name="position" required="true" placeholder="Position">
                 </div>
                 <div class="left">
                   <label  class="title field label">Location: </label>
@@ -135,7 +136,7 @@
                     <!-- Site Name -->
                     <div class="left">
                       <label  class="title field label" for="site">Site: </label>
-                      <input id="siteInput" type="text" class="input" name="site" value="" required="true" placeholder="Site Name">
+                      <input id="siteInput" type="text" class="input" name="site" placeholder="Site Name">
                     </div>
 
                     <!-- Site Department -->
@@ -153,7 +154,7 @@
               <!-- Drive Access -->
               <div class="left">
                 <label  class="title field label">Drive Access: </label>
-                <select id="" class="input selectMe3">
+                <select  class="input selectMe3">
                   <option value="ss1">None</option>
                   <option value="ss1">BBY S:</option>
                   <option value="ss1">EDM S:</option>
@@ -163,7 +164,7 @@
               <!-- Additional Request -->
               <div class="left">
                 <label  class="title field label">Other Requests: </label>
-                <select id="" class="input selectMe2">
+                <select  class="input selectMe2">
                   <option value="subOption1">N/A</option>
                   <option value="subOption2">Hardware</option>
                   <option value="subOption3">Software</option>
@@ -176,14 +177,14 @@
                   <!-- Requester Info -->
                   <div>
                     <label  class="title field label">Site Name: </label>
-                    <input type="text" class="input" id="reqName" name="reqName" value="" required="required" placeholder="Full Name">
+                    <input type="text" class="input" id="reqName2" name="reqName2" placeholder="Full Name">
                   </div>
                 </div>
                 <div class=" row smlBox space">
                   <label class="space title">Folders Permissions: </label>
                   <div class="col-1 fieldAlt">
                     <label class="title">01</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -191,7 +192,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">02</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -199,7 +200,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">03</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -207,7 +208,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">04</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -215,7 +216,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">05</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -223,7 +224,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">06</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -231,7 +232,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">07</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -239,7 +240,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">08</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -247,7 +248,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">09</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -255,7 +256,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">10</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -263,7 +264,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">11</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -271,7 +272,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">12</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -279,7 +280,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">13</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -287,7 +288,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">14</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -295,7 +296,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">15</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -303,7 +304,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">16</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -311,7 +312,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">17</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -319,7 +320,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">18</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -327,7 +328,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">19</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -335,7 +336,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">20</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -350,7 +351,7 @@
                   <!-- Hardware Request -->
                   <div class="left">
                     <label  class="title field label">Hardware Type: </label>
-                    <select id="" class="input selectMe2">
+                    <select  class="input selectMe2">
                       <option value="subOption0">N/A</option>
                       <option value="subOption1">Phone</option>
                       <option value="subOption2">Tablet</option>
@@ -367,7 +368,7 @@
                 <fieldset>
                   <div class="left">
                     <label  class="title field label">Software Type: </label>
-                    <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                    <input id="software" type="text" class="input" name="software" placeholder="Software Name">
                   </div>
                 </fieldset>
               </div>
@@ -378,7 +379,7 @@
                     <!-- Hardware Request -->
                     <div class="left">
                       <label  class="title field label">Hardware Type: </label>
-                      <select id="" class="input selectMe2">
+                      <select  class="input selectMe2">
                         <option value="subOption0">N/A</option>
                         <option value="subOption1">Phone</option>
                         <option value="subOption2">Tablet</option>
@@ -393,7 +394,7 @@
                   <!-- Software Request -->
                   <div class="left">
                     <label  class="title field label">Software Type: </label>
-                    <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                    <input id="software2" type="text" class="input" name="software2" placeholder="Software Name">
                   </div>
                 </fieldset>
               </div>
@@ -409,12 +410,12 @@
               <h5 class="noMargin">User's Information</h5>
               <div class="left">
                 <label  class="title field label" for="username">User's Name: </label>
-                <input id="username" type="text" class="input" name="username" value="" required="true" placeholder="Full Name">
+                <input id="username2" type="text" class="input" name="username2" placeholder="Full Name">
               </div>
               <div class="left">
                 <div class="left">
                   <label  class="title field label" for="position">Position: </label>
-                  <input id="position" class="input" type="text" name="position" value="" required="true" placeholder="Position">
+                  <input id="position2" class="input" type="text" name="position2" placeholder="Position">
                 </div>
                 <div class="left">
                   <label  class="title field label">Current Location: </label>
@@ -453,7 +454,7 @@
                     <!-- Site Name -->
                     <div class="left">
                       <label  class="title field label" for="username">Site: </label>
-                      <input id="sitec2Input" type="text" class="input" name="site" value="" required="true" placeholder="Site Name">
+                      <input id="sitec2Input" type="text" class="input" name="sitec2" placeholder="Site Name">
                     </div>
 
                     <!-- Site Department -->
@@ -508,7 +509,7 @@
                     <!-- Site Name -->
                     <div class="left">
                       <label  class="title field label" for="username">Site: </label>
-                      <input id="site2Input" type="text" class="input" name="site" value="" required="true" placeholder="Site Name">
+                      <input id="site2Input" type="text" class="input" name="site2" placeholder="Site Name">
                     </div>
 
                     <!-- Site Department -->
@@ -528,7 +529,7 @@
               <!-- Drive Access -->
               <div class="left">
                 <label  class="title field label">Drive Access: </label>
-                <select id="" class="input selectMe3">
+                <select  class="input selectMe3">
                   <option value="ss1">None</option>
                   <option value="ss1">BBY S:</option>
                   <option value="ss1">EDM S:</option>
@@ -538,7 +539,7 @@
               <!-- Additional Request -->
               <div class="left">
                 <label  class="title field label">Other Requests: </label>
-                <select id="" class="input selectMe2">
+                <select  class="input selectMe2">
                   <option value="subOption1">N/A</option>
                   <option value="subOption2">Hardware</option>
                   <option value="subOption3">Software</option>
@@ -551,14 +552,14 @@
                   <!-- Requester Info -->
                   <div>
                     <label  class="title field label">Site Name: </label>
-                    <input type="text" class="input" id="reqName" name="reqName" value="" required="required" placeholder="Full Name">
+                    <input type="text" class="input" id="reqName3" name="reqName3" placeholder="Full Name">
                   </div>
                 </div>
                 <div class=" row smlBox space">
                   <label class="space title">Folders Permissions: </label>
                   <div class="col-1 fieldAlt">
                     <label class="title">01</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -566,7 +567,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">02</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -574,7 +575,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">03</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -582,7 +583,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">04</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -590,7 +591,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">05</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -598,7 +599,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">06</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -606,7 +607,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">07</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -614,7 +615,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">08</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -622,7 +623,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">09</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -630,7 +631,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">10</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -638,7 +639,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">11</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -646,7 +647,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">12</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -654,7 +655,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">13</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -662,7 +663,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">14</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -670,7 +671,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">15</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -678,7 +679,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">16</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -686,7 +687,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">17</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -694,7 +695,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">18</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -702,7 +703,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">19</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -710,7 +711,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">20</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -725,7 +726,7 @@
                 <!-- Hardware Request -->
                 <div class="left">
                   <label  class="title field label">Hardware Type: </label>
-                  <select id="" class="input selectMe2">
+                  <select  class="input selectMe2">
                     <option value="subOption0">N/A</option>
                     <option value="subOption1">Phone</option>
                     <option value="subOption2">Tablet</option>
@@ -742,7 +743,7 @@
               <fieldset>
                 <div class="left">
                   <label  class="title field label">Software Type: </label>
-                  <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                  <input id="software3" type="text" class="input" name="software3" placeholder="Software Name">
                 </div>
               </fieldset>
             </div>
@@ -753,7 +754,7 @@
                   <!-- Hardware Request -->
                   <div class="left">
                     <label  class="title field label">Hardware Type: </label>
-                    <select id="" class="input selectMe2">
+                    <select  class="input selectMe2">
                       <option value="subOption0">N/A</option>
                       <option value="subOption1">Phone</option>
                       <option value="subOption2">Tablet</option>
@@ -768,7 +769,7 @@
                 <!-- Software Request -->
                 <div class="left">
                   <label  class="title field label">Software Type: </label>
-                  <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                  <input id="software4" type="text" class="input" name="software4" placeholder="Software Name">
                 </div>
               </fieldset>
             </div>
@@ -780,7 +781,7 @@
           <!-- Hardware Request -->
           <div class="left">
             <label  class="title field label">Hardware Type: </label>
-            <select id="" class="input selectMe2">
+            <select  class="input selectMe2">
               <option value="subOption0">N/A</option>
               <option value="subOption1">Phone</option>
               <option value="subOption2">Tablet</option>
@@ -794,12 +795,12 @@
               <h5 class="noMargin">Information of Requested User</h5>
               <div class="left">
                 <label  class="title field label" for="username">User's Name: </label>
-                <input id="username" type="text" class="input" name="username" value="" required="true" placeholder="Full Name">
+                <input id="username3" type="text" class="input" name="username3" placeholder="Full Name">
               </div>
               <div class="left">
                 <div class="left">
                   <label  class="title field label" for="position">Position: </label>
-                  <input id="position" class="input" type="text" name="position" value="" required="true" placeholder="Position">
+                  <input id="position3" class="input" type="text" name="position3" placeholder="Position">
                 </div>
                 <div class="left">
                   <label  class="title field label">Location: </label>
@@ -838,7 +839,7 @@
                     <!-- Site Name -->
                     <div class="left">
                       <label  class="title field label" for="username">Site: </label>
-                      <input id="site3Input" type="text" class="input" name="site" value="" required="true" placeholder="Site Name">
+                      <input id="site3Input" type="text" class="input" name="site3" placeholder="Site Name">
                     </div>
 
                     <!-- Site Department -->
@@ -855,7 +856,7 @@
               <!-- Drive Access -->
               <div class="left">
                 <label  class="title field label">Drive Access: </label>
-                <select id="" class="input selectMe3">
+                <select  class="input selectMe3">
                   <option value="ss1">None</option>
                   <option value="ss1">BBY S:</option>
                   <option value="ss1">EDM S:</option>
@@ -865,7 +866,7 @@
               <!-- Additional Request -->
               <div class="left">
                 <label  class="title field label">Other Requests: </label>
-                <select id="" class="input selectMe2">
+                <select  class="input selectMe2">
                   <option value="subOption1">N/A</option>
                   <option value="subOption2">Hardware</option>
                   <option value="subOption3">Software</option>
@@ -878,14 +879,14 @@
                   <!-- Requester Info -->
                   <div>
                     <label  class="title field label">Site Name: </label>
-                    <input type="text" class="input" id="reqName" name="reqName" value="" required="required" placeholder="Full Name">
+                    <input type="text" class="input" id="reqName4" name="reqName4" placeholder="Full Name">
                   </div>
                 </div>
                 <div class=" row smlBox space">
                   <label class="space title">Folders Permissions: </label>
                   <div class="col-1 fieldAlt">
                     <label class="title">01</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -893,7 +894,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">02</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -901,7 +902,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">03</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -909,7 +910,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">04</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -917,7 +918,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">05</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -925,7 +926,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">06</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -933,7 +934,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">07</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -941,7 +942,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">08</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -949,7 +950,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">09</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -957,7 +958,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">10</label>
-                    <select id="" class="selectSml noMargin selectMe">
+                    <select  class="selectSml noMargin selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -965,7 +966,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">11</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -973,7 +974,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">12</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -981,7 +982,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">13</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -989,7 +990,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">14</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -997,7 +998,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">15</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1005,7 +1006,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">16</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1013,7 +1014,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">17</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1021,7 +1022,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">18</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1029,7 +1030,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">19</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1037,7 +1038,7 @@
                   </div>
                   <div class="col-1 fieldAlt">
                     <label class="title">20</label>
-                    <select id="" class="selectSml selectMe">
+                    <select  class="selectSml selectMe">
                       <option value="1">N/A</option>
                       <option value="2">R/W</option>
                       <option value="3">R/O</option>
@@ -1052,7 +1053,7 @@
                 <!-- Hardware Request -->
                 <div class="left">
                   <label  class="title field label">Hardware Type: </label>
-                  <select id="" class="input selectMe2">
+                  <select  class="input selectMe2">
                     <option value="subOption0">N/A</option>
                     <option value="subOption1">Phone</option>
                     <option value="subOption2">Tablet</option>
@@ -1069,7 +1070,7 @@
               <fieldset>
                 <div class="left">
                   <label  class="title field label">Software Type: </label>
-                  <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                  <input id="software5" type="text" class="input" name="software5" placeholder="Software Name">
                 </div>
               </fieldset>
             </div>
@@ -1080,7 +1081,7 @@
                   <!-- Hardware Request -->
                   <div class="left">
                     <label  class="title field label">Hardware Type: </label>
-                    <select id="" class="input selectMe2">
+                    <select  class="input selectMe2">
                       <option value="subOption0">N/A</option>
                       <option value="subOption1">Phone</option>
                       <option value="subOption2">Tablet</option>
@@ -1095,7 +1096,7 @@
                 <!-- Software Request -->
                 <div class="left">
                   <label  class="title field label">Software Type: </label>
-                  <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+                  <input id="software6" type="text" class="input" name="software6" placeholder="Software Name">
                 </div>
               </fieldset>
             </div>
@@ -1107,19 +1108,19 @@
       <div id="option4" class="group center">
         <div class="left">
           <label  class="title field label">Software Type: </label>
-          <input id="software" type="text" class="input" name="software" value="" required="true" placeholder="Software Name">
+          <input id="software7" type="text" class="input" name="software7" placeholder="Software Name">
         </div>
         <div class="space">
           <fieldset>
             <h5 class="noMargin">Information of Requested User</h5>
             <div class="left">
               <label  class="title field label" for="username">User's Name: </label>
-              <input id="username" type="text" class="input" name="username" value="" required="true" placeholder="Full Name">
+              <input id="username4" type="text" class="input" name="username4" placeholder="Full Name">
             </div>
             <div class="left">
               <div class="left">
                 <label  class="title field label" for="position">Position: </label>
-                <input id="position" class="input" type="text" name="position" value="" required="true" placeholder="Position">
+                <input id="position4" class="input" type="text" name="position4" placeholder="Position">
               </div>
               <div class="left">
                 <label  class="title field label">Location: </label>
@@ -1158,7 +1159,7 @@
                   <!-- Site Name -->
                   <div class="left">
                     <label  class="title field label" for="username">Site: </label>
-                    <input id="site4Input" type="text" class="input" name="site" value="" required="true" placeholder="Site Name">
+                    <input id="site4Input" type="text" class="input" name="site4" placeholder="Site Name">
                   </div>
 
                   <!-- Site Department -->
@@ -1175,7 +1176,7 @@
             <!-- Drive Access -->
             <div class="left">
               <label  class="title field label">Drive Access: </label>
-              <select id="" class="input selectMe3">
+              <select  class="input selectMe3">
                 <option value="ss1">None</option>
                 <option value="ss1">BBY S:</option>
                 <option value="ss1">EDM S:</option>
@@ -1185,7 +1186,7 @@
             <!-- Additional Request -->
             <div class="left">
               <label  class="title field label">Other Requests: </label>
-              <select id="" class="input selectMe2">
+              <select  class="input selectMe2">
                 <option value="softSubOption1">N/A</option>
                 <option value="softSubOption2">Hardware</option>
               </select>
@@ -1196,14 +1197,14 @@
                 <!-- Requester Info -->
                 <div>
                   <label  class="title field label">Site Name: </label>
-                  <input type="text" class="input" id="reqName" name="reqName" value="" required="required" placeholder="Full Name">
+                  <input type="text" class="input" id="reqName5" name="reqName5" placeholder="Full Name">
                 </div>
               </div>
               <div class=" row smlBox space">
                 <label class="space title">Folders Permissions: </label>
                 <div class="col-1 fieldAlt">
                   <label class="title">01</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1211,7 +1212,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">02</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1219,7 +1220,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">03</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1227,7 +1228,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">04</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1235,7 +1236,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">05</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1243,7 +1244,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">06</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1251,7 +1252,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">07</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1259,7 +1260,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">08</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1267,7 +1268,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">09</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1275,7 +1276,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">10</label>
-                  <select id="" class="selectSml noMargin selectMe">
+                  <select  class="selectSml noMargin selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1283,7 +1284,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">11</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1291,7 +1292,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">12</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1299,7 +1300,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">13</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1307,7 +1308,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">14</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1315,7 +1316,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">15</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1323,7 +1324,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">16</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1331,7 +1332,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">17</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1339,7 +1340,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">18</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1347,7 +1348,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">19</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1355,7 +1356,7 @@
                 </div>
                 <div class="col-1 fieldAlt">
                   <label class="title">20</label>
-                  <select id="" class="selectSml selectMe">
+                  <select  class="selectSml selectMe">
                     <option value="1">N/A</option>
                     <option value="2">R/W</option>
                     <option value="3">R/O</option>
@@ -1371,7 +1372,7 @@
               <!-- Hardware Request -->
               <div class="left">
                 <label  class="title field label">Hardware Type: </label>
-                <select id="" class="input selectMe2">
+                <select  class="input selectMe2">
                   <option value="subOption0">N/A</option>
                   <option value="subOption1">Phone</option>
                   <option value="subOption2">Tablet</option>
@@ -1396,13 +1397,14 @@
         </div>
       </div>
       <div class="center space">
-        <input id="btnSubmit" class="btn btn-primary" type="button" value="Submit Request">
+        <input id="submit" class="btn btn-primary" type="submit" name="submit" value="Submit Request">
         <br>
         <input id="btnDownload" class="btn btn-primary" type="button" value="Download Request Form">
       </div>
       <br>
+      </form>
 
-    <!-- modal -->
+    <!-- modal --
     <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
